@@ -1,0 +1,30 @@
+<ion-view view-title="Detalle Aviso">
+  <ion-content>
+    <div class="list card">
+
+      <div class="item">
+        <h2>{{aviso.data.titulo}}</h2>
+        <p>{{aviso.data.direccion}}</p>
+      </div>
+
+      <div class="item item-body">
+        <p>{{aviso.data.descripcion}}</p>
+        <img src="{{aviso.data.imagen}}">
+      </div>
+      
+      <!--
+      <div class="item">
+         <img src="data:image/jpg;base64,{{product.photo}}" style="max-width: 100%;" ng-if="(product.photo != '')">
+      </div>
+      <a class="item item-icon-left assertive" href="#">
+        <i class="icon ion-ios-cart"></i>
+        Comprar
+      </a>
+      -->
+    </div>
+
+  <div id="map" data-tap-disabled="true"></div>    
+
+  </ion-content>
+</ion-view>
+

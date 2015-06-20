@@ -1,0 +1,16 @@
+<ion-view view-title="Ajustes">
+ 
+ <ion-header-bar class="bar-positive">
+  <h1 class="title">Visualizar Avisos</h1>
+</ion-header-bar>
+
+  <ion-content>	
+	<ion-toggle ng-repeat="tipo in TipoAvisos.data"
+                    ng-model="tipo.habilitado" 
+                    ng-checked="tipo.habilitado"
+                    ng-change="changeHabilitado()">
+          {{ tipo.descripcion }}
+    </ion-toggle>
+  </ion-content>
+
+</ion-view>
